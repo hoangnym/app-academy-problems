@@ -11,6 +11,10 @@ restSum(0); // => 0
 
 function restSum(...otherNums) {
   // Your code here
+  const sum = otherNums.reduce((sum, total) => {
+    return sum + total
+  }, 0)
+  return sum
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
