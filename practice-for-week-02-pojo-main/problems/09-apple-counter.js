@@ -30,6 +30,13 @@ appleCounter(obj3); // => 3
 
 function appleCounter(appleObj) {
   // Your code here
+  num = 0
+  for (let key in appleObj) {
+    if (key.toLowerCase().includes("apple")) {
+      num ++
+    }
+  }
+  return num
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
